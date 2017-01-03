@@ -1,16 +1,9 @@
 # Docker Alpine Hugo
 
-[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/?repo=https://github.com/yunspace/docker-alpine-hugo)
-[![Docker Repository on Quay.io](https://quay.io/repository/yunspace/alpine-hugo/status "Docker Repository on Quay.io")](https://quay.io/repository/technotycoon/alpine-hugo)
+Updated from [jonathanbp](https://github.com/jonathanbp/docker-alpine-hugo)'s docker-alpine-hugo image, with [anigeo](https://github.com/anigeo/docker-awscli/blob/master/Dockerfile)'s alpine awscli support.
 
-Minimal [Hugo](https://gohugo.io) Microcontainer, 82mb with git. Leverages offical [Alpine](https://hub.docker.com/_/alpine/) base image.
+Minimal (~130 MB) [Hugo](https://gohugo.io) Microcontainer with AWS CLI and git. Based off offical [Alpine](https://hub.docker.com/_/alpine/) 3.2 image.
 
 ## Usage
 
-From Quay.io
-
-    docker run --rm quay.io/technotycoon/alpine-hugo:latest
-
-or Docker Hub
-
-    docker run --rm technotycoon/alpine-hugo:latest
+    docker run --rm cgbaker/alpine-hugo-aws:latest
